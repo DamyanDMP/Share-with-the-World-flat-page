@@ -1,0 +1,83 @@
+ERROR - 2016-07-29 10:10:13 - exception 'ErrorException' with message 'Undefined index: getId' in C:\wamp\www\App\Controllers\Articles\articlesController.php:49
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Articles\articlesController.php(49): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp\\www\\App...', 49, Array)
+#1 [internal function]: articlesController->postAction()
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: articlesController::___postAction()
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('articlesControl...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(29): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-29 10:10:32 - exception 'ErrorException' with message 'Undefined index: getId' in C:\wamp\www\App\Controllers\Articles\articlesController.php:49
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Articles\articlesController.php(49): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp\\www\\App...', 49, Array)
+#1 [internal function]: articlesController->postAction()
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: articlesController::___postAction()
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('articlesControl...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(29): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-29 10:10:33 - exception 'ErrorException' with message 'Undefined index: getId' in C:\wamp\www\App\Controllers\Articles\articlesController.php:49
+Stack trace:
+#0 C:\wamp\www\App\Controllers\Articles\articlesController.php(49): Yee\Yee::handleErrors(8, 'Undefined index...', 'C:\\wamp\\www\\App...', 49, Array)
+#1 [internal function]: articlesController->postAction()
+#2 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#3 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#4 [internal function]: articlesController::___postAction()
+#5 C:\wamp\www\Yee\Route.php(462): call_user_func_array('articlesControl...', Array)
+#6 C:\wamp\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#7 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#8 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#9 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#10 C:\wamp\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#11 C:\wamp\www\index.php(29): Yee\Yee->execute()
+#12 {main}
+ERROR - 2016-07-29 10:35:32 - exception 'ErrorException' with message 'Problem preparing query (DELETE FROM categories WHERE   category category ? ) You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'category ?' at line 1' in C:\wamp\www\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\wamp\\www\\Yee...', 909, Array)
+#1 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(377): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL)
+#4 C:\wamp\www\App\Controllers\addCategory\addCategoryController.php(48): Yee\Libraries\Database\MysqliDB->delete('categories')
+#5 [internal function]: addCategoryController->postAction()
+#6 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#8 [internal function]: addCategoryController::___postAction()
+#9 C:\wamp\www\Yee\Route.php(462): call_user_func_array('addCategoryCont...', Array)
+#10 C:\wamp\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#11 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\wamp\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#15 C:\wamp\www\index.php(29): Yee\Yee->execute()
+#16 {main}
+ERROR - 2016-07-29 10:38:05 - exception 'ErrorException' with message 'Problem preparing query (DELETE FROM category WHERE   category = ? ) Table 'sww.category' doesn't exist' in C:\wamp\www\Yee\Libraries\Database\MysqliDB.php:909
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(256, 'Problem prepari...', 'C:\\wamp\\www\\Yee...', 909, Array)
+#1 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(909): trigger_error('Problem prepari...', 256)
+#2 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(648): Yee\Libraries\Database\MysqliDB->_prepareQuery()
+#3 C:\wamp\www\Yee\Libraries\Database\MysqliDB.php(377): Yee\Libraries\Database\MysqliDB->_buildQuery(NULL)
+#4 C:\wamp\www\App\Controllers\addCategory\addCategoryController.php(48): Yee\Libraries\Database\MysqliDB->delete('category')
+#5 [internal function]: addCategoryController->postAction()
+#6 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#7 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___postAction', Array)
+#8 [internal function]: addCategoryController::___postAction()
+#9 C:\wamp\www\Yee\Route.php(462): call_user_func_array('addCategoryCont...', Array)
+#10 C:\wamp\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#11 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#12 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#13 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#14 C:\wamp\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#15 C:\wamp\www\index.php(29): Yee\Yee->execute()
+#16 {main}

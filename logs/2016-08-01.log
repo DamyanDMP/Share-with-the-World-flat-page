@@ -1,0 +1,22 @@
+ERROR - 2016-08-01 07:26:52 - exception 'ErrorException' with message 'file_get_contents(./templates/pages/addArticle.tpl): failed to open stream: Permission denied' in C:\wamp\www\Twig\Loader\Filesystem.php:130
+Stack trace:
+#0 [internal function]: Yee\Yee::handleErrors(2, 'file_get_conten...', 'C:\\wamp\\www\\Twi...', 130, Array)
+#1 C:\wamp\www\Twig\Loader\Filesystem.php(130): file_get_contents('./templates/pag...')
+#2 C:\wamp\www\Twig\Environment.php(334): Twig_Loader_Filesystem->getSource('pages/addArticl...')
+#3 C:\wamp\www\Yee\Views\Twig.php(87): Twig_Environment->loadTemplate('pages/addArticl...')
+#4 C:\wamp\www\Yee\View.php(254): Yee\Views\Twig->render('pages/addArticl...', NULL)
+#5 C:\wamp\www\Yee\View.php(242): Yee\View->fetch('pages/addArticl...', NULL)
+#6 C:\wamp\www\Yee\Yee.php(765): Yee\View->display('pages/addArticl...')
+#7 C:\wamp\www\App\Controllers\addAtricle\addArticleController.php(22): Yee\Yee->render('pages/addArticl...', Array)
+#8 [internal function]: addArticleController->indexAction()
+#9 C:\wamp\www\Yee\Managers\Controller\Controller.php(22): call_user_func_array(Array, Array)
+#10 [internal function]: Yee\Managers\Controller\Controller::__callStatic('___indexAction', Array)
+#11 [internal function]: addArticleController::___indexAction()
+#12 C:\wamp\www\Yee\Route.php(462): call_user_func_array('addArticleContr...', Array)
+#13 C:\wamp\www\Yee\Yee.php(1334): Yee\Route->dispatch()
+#14 C:\wamp\www\Yee\Middleware\Flash.php(85): Yee\Yee->call()
+#15 C:\wamp\www\Yee\Middleware\MethodOverride.php(92): Yee\Middleware\Flash->call()
+#16 C:\wamp\www\Yee\Middleware\PrettyExceptions.php(67): Yee\Middleware\MethodOverride->call()
+#17 C:\wamp\www\Yee\Yee.php(1279): Yee\Middleware\PrettyExceptions->call()
+#18 C:\wamp\www\index.php(30): Yee\Yee->execute()
+#19 {main}

@@ -1,0 +1,113 @@
+.icon{
+	margin-left: 20px;
+	padding-top: 10px;
+}
+.icon:hover{
+	text-decoration: none;
+}
+.icons{
+	font-family: FontAwesome;
+	font-size: 28px;
+	padding: 10px;
+	padding-right: 13px;
+	color: gray;
+	background-color: white;
+	border-radius: 5px;
+	border: none;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+	border: 2px solid white;
+}
+#facebook:before {
+    content: "\f09a";
+}
+#facebook:hover{
+	background-color: #3b5998! important;
+}
+#youtube:before{
+	content: "\f16a";
+}
+#youtube:hover{
+	color: white;
+	background-color: tomato;
+}
+#twitter:before{
+	content: "\f099";
+}
+#twitter:hover{
+	background-color: #3385ff;
+}
+#google:before{
+	content: "\f0d5";
+}
+#google:hover{
+	background-color: tomato;
+}
+.icons:hover{
+	color: white;
+	transition: 1s;
+}
+    #facebook{
+        padding: 4px 15px;
+        float: right;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+    }
+    #google{
+        margin-right: 15px;
+    }
+    #facebook::after{
+        clear: both;
+    }
+    h2{
+        font-weight: bold;
+        color: white;
+        margin-top: 0px;
+    }
+    #socialCont{
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+    #table{
+        width: 100px;
+        margin: 0 auto;
+        position: relative;
+        top: 170px;
+    }
+    .text{
+        border-radius: 10px;
+        padding: 10px;
+        border: 3px solid lightgray;
+    }
+    #fields{
+        width: 655px;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+    .names{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+    .names:first-of-type{
+        margin-right: 50px;
+    }
+.myBtn{
+        background: rgba(255, 255, 255, 0.2);
+        font-weight:bold;
+        font-size: 35px;
+        margin-top: 10px;
+        padding: 0px 35px;
+        margin-right: 0px;
+        border-radius: 20px;
+        color: darkorange;
+        border: 3px solid darkorange;
+        text-decoration: none;
+        transition-duration: 0.8s;
+    }
+    .myBtn:hover{
+        background: darkorange;
+        color: white;
+        border: 3px solid white;
+    }
