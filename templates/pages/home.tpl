@@ -247,16 +247,21 @@
 </div>
 <style>
     .myBtn{
-        font-size: 25px;
-        padding: 10px 35px;
+        font-size: 2vw;
+        padding: 0.5vw 2vw;
         border-radius: 20px;
         color: #0A7ED5;
         border: 3px solid #0A7ED5;
-        margin-right: 75px;
         text-decoration: none;
+        white-space: nowrap;
+    }
+    #btn2{
+        margin-right: 9vw;
     }
     h1{
-        margin-bottom: 20px;
+        margin-bottom: 2vw;
+        font-size: 3vw;
+        white-space: nowrap;
     }
     .myBtn:hover{
         text-decoration: none;
@@ -267,40 +272,76 @@
     }
     .cont{
         color: #0A7ED5;
-        margin-right: 650px;
         bottom: 200px;
     }
-    .text3{
-        color: #0A7ED5;
-        position: relative;
-        bottom: 500px;
-        margin-right: -660px! important;
+    #text1{
+        margin-right: 55%;
     }
-    .text3 a{
-        margin-left: 60px;
+    .text4{
+        margin-bottom: 200px;
+        color: #0A7ED5;
     }
     .text2{
         color: #0A7ED5;
+        text-align: right;
         position: relative;
-        bottom: 500px;
-        margin-right: -560px! important;
-    }
-    .text2 a{
-        margin-left: 145px;
+        left: -5%;
     }
     .nav-menu{
         padding-top: 20px! important;
     }
     #forTwo{
-        bottom: 570px;
+        bottom: 300px;
     }
     #shineBtn{
-        margin-right: 535px;
+        margin-right: 65%;
         color: white;
         border: 3px solid white;
     }
     #shineBtn:hover{
         border-color: #0A7ED5;
+    }
+    .pic3{
+        bottom: 720px;
+    }
+    #btn3{
+        margin-left: 8.5vw;
+        margin-right: 0px;
+    }
+    #comfortaa{
+        font-family: Comfortaa;
+        text-align: left;
+        font-size: 4vw;
+        margin-left: 10%;
+    }
+    #comfortaa2{
+        font-family: Comfortaa;
+        width: 100%;
+        font-size: 4.8vw;
+        color: white;
+    }
+    #comfortaa3{
+        font-family: Comfortaa;
+        font-size: 4vw;
+        color: black;
+        text-align: right;
+    }
+    #textPic4{
+        font-family: Comfortaa;
+        font-size: 3vw;
+        color: white;
+        text-align: right;
+    }
+    span{
+        font-size: 4vw;
+    }
+    #pic4Block{
+        position: relative;
+        left: -5%;
+        bottom: 600px;
+    }
+    #btnBlock{
+        text-align: right;
     }
 </style>
 <!-- Full Page Image Background Carousel Header -->
@@ -319,31 +360,41 @@
             <!-- Set the third background image using inline CSS below. -->
             <div class="fill" style="background-image:url('/css/slaider/img/pic5.png');"></div>
             <div class="carousel-caption">
+                <div id="comfortaa">Be<br>this<br>one,<br>who<br>will<br>shine</div>
                 <a href="/signup" class="myBtn" id="shineBtn">Get start>></a>
             </div>
         </div>
         <div class="item">
             <!-- Set the first background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/css/slaider/img/pic1.jpg');"></div>
+            <div class="fill" style="background-image:url('/css/slaider/img/slide2.jpg');"></div>
             <div class="carousel-caption cont">
-                <h1>Get start, with us!</h1>
-                <a href="/signup" class="myBtn">Get start>></a>
+                <div id="comfortaa2">if you don't know where<br>to start, we can help you</div>
+                <div id="text1">
+                    <h1>Get start, with us!</h1>
+                    <a href="/signup" class="myBtn" id="btn2">Get start>></a>
+                </div>
             </div>
         </div>
         <div class="item">
             <!-- Set the second background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/css/slaider/img/deals.png');"></div>
-            <div class="carousel-caption cont text2" id="forTwo" >
-                <h1>Get start, with us!</h1>
-                <a href="/signup" class="myBtn">Get start>></a>
+            <div class="fill" style="background-image:url('/css/slaider/img/deals.jpg');"></div>
+            <div class="carousel-caption cont text2 pic3">
+                <div id="comfortaa3">With us you will make<br>deals for millions</div>
+                <div id="forTwo">
+                    <h1>Get start, with us!</h1>
+                    <a href="/signup" class="myBtn" id="btn3">Get start>></a>
+                </div>
             </div>
         </div>
         <div class="item">
             <!-- Set the third background image using inline CSS below. -->
-            <div class="fill" style="background-image:url('/css/slaider/img/pic3.png');"></div>
-            <div class="carousel-caption text3">
-                <h1>Try with us!</h1>
-                <a href="/signup" class="myBtn">Get start>></a>
+            <div class="fill" style="background-image:url('/css/slaider/img/slide3.png');"></div>
+            <div class="carousel-caption text4" id="pic4Block">
+                <div id="textPic4">We are <span>RESPONSIVE</span><br> have solve on every problem<br>and everything is easy</div>
+                <div id="btnBlock">
+                    <h1>Try with us!</h1>
+                    <a href="/signup" class="myBtn">Get start>></a>
+                </div>
             </div>
         </div>
     </div>
@@ -363,7 +414,7 @@
 
 <script>
     $('.carousel').carousel({
-        interval: 4000, //changes the speed
+        interval: 228000, //changes the speed
         pause: 'none'
     });
 </script>
